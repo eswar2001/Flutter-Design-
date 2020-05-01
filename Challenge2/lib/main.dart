@@ -40,10 +40,10 @@ class _MyHomeState extends State<MyHome> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              inkwellButton('1', Colors.white70,Colors.blueAccent[100]),
-              inkwellButton('2', Colors.blueAccent[100],Colors.white70),
-              inkwellButton('3', Colors.blueAccent[100],Colors.white70),
-              inkwellButton('4', Colors.blueAccent[100],Colors.white70)
+              inkwellButton('1', Colors.white70, Colors.blueAccent[100]),
+              inkwellButton('2', Colors.blueAccent[100], Colors.white70),
+              inkwellButton('3', Colors.blueAccent[100], Colors.white70),
+              inkwellButton('4', Colors.blueAccent[100], Colors.white70)
             ],
           ),
         ),
@@ -105,6 +105,7 @@ class _MyHomeState extends State<MyHome> {
                         height: 50.0,
                       ),
                       Material(
+                        color: Colors.white,
                         child: Ink(
                           decoration: BoxDecoration(
                             border:
