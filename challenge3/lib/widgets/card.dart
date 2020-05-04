@@ -52,20 +52,24 @@ Widget buildCard(String name, String status, int cardIndex) {
           SizedBox(height: 15.0),
           Expanded(
               child: Container(
-                  width: 175.0,
-                  decoration: BoxDecoration(
-                    color: status == 'Away' ? Colors.grey : Colors.green,
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(10.0),
-                        bottomRight: Radius.circular(10.0)),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Request',
-                      style: TextStyle(
-                          color: Colors.white, fontFamily: 'Quicksand'),
-                    ),
-                  )))
+            width: 175.0,
+            decoration: BoxDecoration(
+              color: status == 'Away' ? Colors.grey : Colors.green,
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(10.0),
+                  bottomRight: Radius.circular(10.0)),
+            ),
+            child: MaterialButton(
+              onPressed: () {},
+              child: Center(
+                child: Text(
+                  'Request',
+                  style:
+                      TextStyle(color: Colors.white, fontFamily: 'Quicksand'),
+                ),
+              ),
+            ),
+          ))
         ],
       ),
       margin: cardIndex.isEven

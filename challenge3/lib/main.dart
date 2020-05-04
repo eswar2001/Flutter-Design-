@@ -47,9 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: Alignment(0.0, -0.40),
                 height: 100.0,
                 color: Colors.white,
-                child: Text(
-                  'Get coaching',
-                  style: TextStyle(fontFamily: 'Montserrat', fontSize: 20.0),
+                child: MaterialButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Get coaching',
+                    style: TextStyle(fontFamily: 'Montserrat', fontSize: 20.0),
+                  ),
                 ),
               ),
               Container(
@@ -123,13 +126,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 12.0),
                   ),
-                  Text(
-                    'VIEW PAST SESSIONS',
-                    style: TextStyle(
-                        color: Colors.green,
-                        fontFamily: 'Quicksand',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 12.0),
+                  MaterialButton(
+                    onPressed: () {},
+                    child: Text(
+                      'VIEW PAST SESSIONS',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontFamily: 'Quicksand',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12.0),
+                    ),
                   )
                 ],
               )),
