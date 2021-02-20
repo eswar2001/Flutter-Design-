@@ -2,29 +2,29 @@ import 'package:flutter/material.dart';
 
 import 'widgets/card.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: new MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new FlutterLogo(colors: Colors.green, size: 25.0),
+    return Scaffold(
+      appBar: AppBar(
+        title: FlutterLogo(textColor: Colors.green, size: 25.0),
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Colors.white,

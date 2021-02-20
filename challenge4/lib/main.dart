@@ -40,7 +40,7 @@ class _HomescreenState extends State<Homescreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 3.0, left: 3.0),
                   child: FlutterLogo(
-                    colors: Colors.indigo,
+                    textColor: Colors.indigo,
                   ),
                 ),
                 Padding(
